@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NectarOnlineGrocery</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="address_label">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Other</item>
+    </string-array>
+</resources>

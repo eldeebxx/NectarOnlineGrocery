@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nectaronlinegrocery">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_colored"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo_colored"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ShowAddresses" />
+        <activity
+            android:name=".ShowOrders"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Checkout" />
+        <activity android:name=".CategoryItems" android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ProductDetails"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".auth.SignUp" />
+        <activity android:name=".auth.Login" />
+        <activity
+            android:name=".auth.Verification"
+            android:parentActivityName=".auth.Number" />
+        <activity android:name=".auth.Number" />
+        <activity android:name=".auth.SignIn" />
+        <activity android:name=".welcome.Onboarding" />
+        <activity android:name=".welcome.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
